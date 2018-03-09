@@ -1,5 +1,6 @@
 # ng-rest-upload
 
-[![Build Status](https://travis-ci.org/shared-vd/ng-rest-upload.svg?branch=master)](https://travis-ci.org/shared-vd/ng-rest-upload.svg)
+[![Build Status](https://travis-ci.org/shared-vd/ng-rest-upload.svg?branch=master)](https://travis-ci.org/shared-vd/ng-rest-upload)
+
 
 Angular component that uses REST API to upload a file
