@@ -1,6 +1,6 @@
 {
   "name": "ng-rest-upload",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "prepare-deploy": "gulp inline-templates && gulp clean-dist && ngc -p tsconfig.ngc.json && gulp clean-tmp && gulp copy-all",
     "test": "ng test --watch false"
@@ -23,7 +23,11 @@
   "peerDependencies": {
     "@angular/common": "^5.2.0",
     "@angular/core": "^5.2.0",
+    "@angular/forms": "^5.2.0",
     "rxjs": "^5.5.6"
+  },
+  "dependencies": {
+    "@angular/forms": "^5.2.0"
   },
   "devDependencies": {
     "@angular/cli": "^1.7.0",

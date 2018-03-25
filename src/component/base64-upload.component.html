@@ -1,0 +1,11 @@
+<form class="form-group" [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="row m-2">
+    <input class="col-3 form-control" type="file" id="upload" (change)="onFileChange($event)" #fileInput>
+    <span class="col-1"></span>
+    <button class="col-1 btn btn-success" type="submit" [disabled]="nofileSelected || loading">
+      Envoyer<i class="fa fa-spinner fa-spin fa-fw" *ngIf="loading"></i>
+    </button>
+    <span class="col-1"></span>
+    <button class="col-1 btn btn-default" *ngIf="wantClearButton" type="button" (click)="clearFile()">clear</button>
+  </div>
+</form>

@@ -9,14 +9,24 @@
 
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MyServiceFactoryFactoryProvider } from './services/my.service';
+import { Base64UploadComponent } from "./component/base64-upload.component";
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
+
+    declarations: [
+        Base64UploadComponent,
+        HttpClientModule,
+    ],
     imports: [
         CommonModule,
+        FormsModule,
+        ReactiveFormsModule
     ],
-    providers: [
-        MyServiceFactoryFactoryProvider,
+    providers: [],
+    exports: [
+        Base64UploadComponent
     ],
 })
 export class NgRestUploadModule {
